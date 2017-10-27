@@ -1,0 +1,36 @@
+/*.videobanner .outer { width: 100%;    overflow: hidden;}
+.videobanner .inner { display: inline-block;  position: relative;  right: -50%;}
+.videobanner .inner video  { position: relative; left: -50%;}
+.videobanner canvas  { position: relative; left: -50%;}
+.videobanner .sliderVideo{display: none;}*/
+
+.videobanner .inner video  { width: 100%;}
+.videobanner .parent {
+    width: 100%;
+
+}
+.videobanner .parentsl{
+    overflow: hidden;
+
+}
+.videobanner .containers {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.videobanner .containers img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+

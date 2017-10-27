@@ -1,0 +1,45 @@
+.slick-slider {}
+.slick-slider:after { content: ' '; display: block; clear: both; }
+.slick-slider .item { float: left; width: 640px; overflow: hidden; height: 350px; position: relative; }
+.slick-slider .item img { width: 640px; max-width: none; position: absolute; left: 0; }
+.slick-slider .item .txt { position: absolute; z-index: 999; bottom: 10px; left: 10px; display: none; padding-right: 0; width: 55%; white-space: normal !important; word-wrap: break-word; font-family: 'Benton Sans','Helvetica','sans-serif'; }
+.slick-slider .item .txt p{padding: 0;}
+.slick-slider .item .bg { display: none; top: 0; bottom: 0; left: 0; right: 0; position: absolute; z-index: 99; }
+.slick-slider .item .btn { position: absolute; width: 35%; z-index: 999; bottom: 20px; right: 10px; display: none; font-weight: bold; white-space: normal !important; word-wrap: break-word; font-family: "Benton Sans","Helvetica","sans-serif"; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);  }
+.slick-slider .item .bgs { height: auto; bottom: 0; left: 0; right: 0; position: absolute; z-index: 99;  display: none}
+.slick-slider .item.slick-current .bgs {display: block}
+.slick-slider .item .bgs .txt p { padding: 0; }
+.slick-slider .item .bgs .btn { z-index: 999; position: absolute; bottom: 20px; right: 10px; top: 20px; float: right; }
+
+.slick-slider .slick-current .bg { display: block; }
+.slick-slider .slick-current .txt { display: inline-block; }
+.slick-slider .slick-current .txt h4 { padding: 0; margin: 0; margin-top: 15px; }
+.slick-slider .slick-current .btn { display: inline-block;}
+.slick-slider .slick-current .bgs .txt { display: inline-block; }
+.slick-slider .slick-current .bgs h4 { padding: 0; margin: 0; margin-top: 0px; color: inherit; }
+
+.slick-slider .slick-next { right: 25px; z-index: 999; }
+.slick-slider .slick-prev { left: 25px; z-index: 999; }
+
+.slick-slider .item { height: auto; }
+.slick-slider .item img { width: 100%; position: relative; }
+.slick-slider .item .bgs .txt { padding-top: 10px; position: relative; bottom: auto; left: 10px; width: 55%;  white-space: normal !important; word-wrap: break-word;}
+.slick-slider .item .bgs .btn { bottom: 10px; right:10px; top: auto; left: auto; float: none; margin:0;  width: 35%; white-space: normal !important; word-wrap: break-word; }
+
+@media (max-width: 1200px) {
+    .slick-slider .item .bgs .btn {font-size: 12px;}
+}
+@media (max-width: 767px) {
+    .slick-slider .item .bgs .txt p {width: 100%; }    
+    .slick-slider .item { float: left; width: 640px; overflow: hidden; height: auto; position: relative; }
+    .slick-slider .item img { width: 100%; position: relative; max-width: none;  left: 0; }
+    .slick-slider .item .bgs .txt { z-index: 999; display: block; padding: 20px 20px 0px 20px; width: 55%; float: left; position: relative; bottom: 0; left: 0; }
+    .slick-slider .item .bgs .btn { z-index: 999; margin: 0; position: absolute; bottom: 10px; right: 10px; left: auto;  top: inherit; float: right; width: 35%;}
+
+}
+
+
+@media (max-width: 660px){
+    .slick-slider .item .txt {width: 55%; float: left; bottom: 0; left: 5px;  padding-right: 0px; padding-bottom: 10px; }
+    .slick-slider .item .btn { bottom: 10px; right: 10px; left: auto;  top: inherit; float: right; width: 35%; }
+}
